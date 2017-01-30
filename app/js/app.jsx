@@ -1,3 +1,5 @@
+'use strict';
+
 import React from 'react';
 
 class App extends React.Component {
@@ -6,7 +8,7 @@ class App extends React.Component {
 	
 		return (
 			<div>
-				<h2>Hey there!</h2>
+				<h2>Viola! &#x262E;</h2>
 			</div>
 		);
 	}

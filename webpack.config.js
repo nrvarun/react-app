@@ -3,10 +3,10 @@
  let HtmlWebpackPlugin = require('html-webpack-plugin');
  
  var config = {
- 	entry: './main.js',
+ 	entry: './app/main.js',
 
  	output: {
- 		path: './',
+ 		path: './app/',
  		filename: 'index.js'
  	},
 
@@ -16,6 +16,10 @@
  		inline: true,
  		port:  8000
  	},
+
+  resolve: {
+      modulesDirectories: ['app', 'node_modules']
+  },
 
  	module: {
       loaders: [
@@ -31,13 +35,13 @@
          {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ["style", "css", "postcss" , "sass","stylefmt"]
+                loaders: ['style-loader','css-loader','postcss-loader','sass-loader']
          }
       ]
    },
    plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './app/index.html',
       inject: true
     })
   ]

@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "react-app",
   "version": "1.0.0",
   "description": "lets play with react",
   "main": "main.js",
@@ -14,14 +14,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "react": "*",
-    "react-dom": "*",
-    "webpack": "*",
-    "webpack-dev-server": "*",
-    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "html-webpack-plugin": "^2.28.0",
     "node-sass": "^3.13.1",
     "postcss": "^5.2.6",
     "postcss-loader": "^1.2.0",
@@ -29,5 +22,15 @@
     "style-loader": "^0.13.1",
     "stylefmt": "^5.0.2",
     "stylefmt-loader": "^1.2.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.28.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "stylefmt-loader": "^1.2.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

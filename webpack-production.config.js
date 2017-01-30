@@ -7,7 +7,7 @@ let webpack = require('webpack');
 let path  = require('path');
 
  var config = {
- 	entry: './main.js',
+ 	entry: './app/main.js',
 
  	output: {
     filename: './js/bundle.js',
@@ -45,9 +45,9 @@ let path  = require('path');
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
-    new ETP('./css/style.css'),
+    new ETP('./dist/css/style.css'),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './app/index.html',
       inject: true,
       minify: {
         html5: true,
@@ -59,7 +59,7 @@ let path  = require('path');
       }
     }),
     new CopyWebpackPlugin([
-            {from: './index.html', to: './'}
+            {from: './app/index.html', to: './'}
     ])
   ]
 }
