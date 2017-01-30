@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 62.5%;
+}
+
+$grey: #808080;
+$black: #000000;
+$white: #fefefe;
+
+body {
+  color: $black;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  margin: 0;
+}
+
