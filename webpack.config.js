@@ -14,7 +14,7 @@
 
  	devServer: {
  		inline: true,
- 		port:  8080
+ 		port:  8000
  	},
 
  	module: {
@@ -31,7 +31,7 @@
          {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ["style", "css", "postcss" , "sass"]
+                loaders: ["style", "css", "postcss" , "sass","stylefmt"]
          }
       ]
    },

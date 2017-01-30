@@ -17,9 +17,7 @@
     "react": "*",
     "react-dom": "*",
     "webpack": "*",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "*",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
