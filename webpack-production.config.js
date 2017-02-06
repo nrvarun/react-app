@@ -6,7 +6,7 @@ let webpack = require('webpack');
 let path  = require('path');
 
  var config = {
- 	entry: './app/main.js',
+ 	entry: './app/main.jsx',
 
  	output: {
     filename: './js/bundle.js',
@@ -32,7 +32,10 @@ let path  = require('path');
          { 
             test: /\.scss$/, 
             loader: ETP.extract("style-loader", "css!postcss!sass!")
-          }
+         },
+         {      test: /\.(png|jpg)$/, 
+                loader: require.resolve("file-loader") + "?name=../[path][name].[ext]"
+         }
       ]
    },
    plugins: [
